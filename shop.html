@@ -9,15 +9,22 @@
   <meta name="apple-mobile-web-app-title" content="Fly EPT">
   <link rel="apple-touch-icon" sizes="180x180" href="https://ianp83.github.io/fly-ept-icons/fly-ept-shop.png">
   <link rel="icon" type="image/png" href="https://ianp83.github.io/fly-ept-icons/fly-ept-shop.png">
-  <meta http-equiv="refresh" content="0;url=https://script.google.com/a/macros/flyeptspain.com/s/AKfycby1q38jjhv2RC4FEcqIn2ESGkNZnVs7acnzRma_DQm7FV73HfsDysLfJHXZY5n5kli8/exec">
   <style>
-    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,sans-serif; background:#f3f6f9; color:#152536; display:flex; align-items:center; justify-content:center; height:100vh; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,sans-serif; background:#f3f6f9; color:#152536; display:flex; align-items:center; justify-content:center; height:100vh; text-align:center; padding:20px; }
+    a { display:inline-block; margin-top:20px; padding:14px 28px; background:#168653; color:white; text-decoration:none; border-radius:12px; font-weight:700; }
   </style>
 </head>
 <body>
-  <p>Opening shop…</p>
+  <div id="content">
+    <h1>Fly EPT Shop</h1>
+    <p>Add this page to your Home Screen for the app icon.</p>
+    <a href="https://script.google.com/a/macros/flyeptspain.com/s/AKfycby1q38jjhv2RC4FEcqIn2ESGkNZnVs7acnzRma_DQm7FV73HfsDysLfJHXZY5n5kli8/exec">Open shop now</a>
+  </div>
   <script>
-    window.location.replace("https://script.google.com/a/macros/flyeptspain.com/s/AKfycby1q38jjhv2RC4FEcqIn2ESGkNZnVs7acnzRma_DQm7FV73HfsDysLfJHXZY5n5kli8/exec");
+    // Only redirect when launched from the Home Screen icon
+    if (window.navigator.standalone) {
+      window.location.replace("https://script.google.com/a/macros/flyeptspain.com/s/AKfycby1q38jjhv2RC4FEcqIn2ESGkNZnVs7acnzRma_DQm7FV73HfsDysLfJHXZY5n5kli8/exec");
+    }
   </script>
 </body>
 </html>
