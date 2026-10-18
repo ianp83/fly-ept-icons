@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fly EPT Shop</title>
+  <meta name="apple-mobile-web-app-title" content="Fly EPT Shop">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" sizes="180x180" href="./fly-ept-shop.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./fly-ept-shop.png">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#b5121b">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; min-height:100dvh; display:grid; place-items:center; padding:24px; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:#17212b; background:#f5f6f8; text-align:center; }
+    main { width:min(100%,420px); }
+    img { width:116px; height:116px; border-radius:25px; }
+    h1 { margin:20px 0 8px; font-size:27px; }
+    p { line-height:1.5; color:#526171; }
+    a { display:block; margin-top:22px; padding:16px 18px; border-radius:13px; background:#b5121b; color:#fff; text-decoration:none; font-weight:750; font-size:17px; }
+    .note { margin-top:16px; font-size:13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="./fly-ept-shop.png" alt="Fly EPT Shop icon">
+    <h1>Fly EPT Shop</h1>
+    <p>Tap below to open the shop. Your existing Apps Script app is unchanged.</p>
+    <a id="launch" href="https://script.google.com/a/macros/flyeptspain.com/s/AKfycby1q38jjhv2RC4FEcqIn2ESGkNZnVs7acnzRma_DQm7FV73HfsDysLfJHXZY5n5kli8/exec">Open Fly EPT Shop</a>
+    <p class="note">This is a test launcher. If the button opens Safari rather than staying full-screen, keep using your original app shortcut.</p>
+  </main>
+  <script>
+    const target = "https://script.google.com/a/macros/flyeptspain.com/s/AKfycby1q38jjhv2RC4FEcqIn2ESGkNZnVs7acnzRma_DQm7FV73HfsDysLfJHXZY5n5kli8/exec";
+    document.getElementById("launch").href = target;
+  </script>
+</body>
+</html>
